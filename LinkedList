@@ -21,5 +21,11 @@ There are mainly three types of linked lists:
 1-SINGLE LINKED LIST
 //Creating Node Class
 class Node{
+  int data;
+  Node next;
 
+  public Node(int data){
+    this.data=data;
+    this.next=null;
+  }
 }
