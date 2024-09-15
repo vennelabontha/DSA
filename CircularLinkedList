@@ -5,7 +5,7 @@ Unlike a regular linked list, which ends with a node pointing to NULL, the last 
 This means that you can keep traversing the list without ever reaching a NULL value.
 
 Types of Circular Linked Lists
-  -1.singly linked lists 
+  ->.singly linked lists 
   ->doubly linked lists. 
 
 
