@@ -52,6 +52,13 @@ class Node{
             printTree(root.right);
         }
     }
+    public int count(Node root){
+        if(root==null){
+            return 0;
+        }
+        
+        return 1+count(root.left)+count(root.right);
+    }
 }
 public class Main
 {
@@ -62,7 +69,7 @@ public class Main
 	    Node root=new Node(x);
 	    for(; ;){
 	        System.out.println();
-	        System.out.println("1->insert\n2->display\n3->exit");
+	        System.out.println("1->insert\n2->display\n3->count the no.of Nodes\n4-exit");
 	        int ch=sc.nextInt();
 	        if(ch==1){
 	            System.out.println("enter the value: ");
@@ -72,6 +79,9 @@ public class Main
 	        else if(ch==2){
 	           root.printTree(root); 
 	        }
+		else if(ch==3){
+			root.count(root);
+		}
 	        else{
 	            break;
 	        }
